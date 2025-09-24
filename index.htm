@@ -32,13 +32,12 @@
   </head>
   <body>
     <button type="button">???</button>
-    <img src="/gay/angery.jpg">
     <script>
       let burpEffect = new Audio("/burp/burp.mp3");
       document.querySelector("button").addEventListener("click", () => {
         let burpVideo = document.createElement("img");
         burpVideo.src = "/burp/burp.gif";
-        document.appendChild(burpVideo);
+        document.body.appendChild(burpVideo);
         burpEffect.play();
         setTimeout(() => {burpVideo.remove();}, 10075);
       });
