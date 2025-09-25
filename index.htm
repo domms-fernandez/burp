@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>???</title>
     <style>
       * {
         margin: 0;
@@ -35,11 +36,14 @@
     <script>
       let burpEffect = new Audio("/burp/burp.mp3");
       document.querySelector("button").addEventListener("click", () => {
+        document.body.style.backgroundColor = "#000000";
+        
         let burpVideo = document.createElement("img");
         burpVideo.src = "/burp/burp.gif";
         document.body.appendChild(burpVideo);
         burpEffect.play();
-        setTimeout(() => {burpVideo.remove();}, 10075);
+        
+        setTimeout(() => {burpVideo.remove(); document.body.style.backgroundColor = "#FFFFFF";}, 10759);
       });
     </script>
   </body>
