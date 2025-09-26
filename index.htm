@@ -46,7 +46,7 @@
       document.querySelector("button").addEventListener("click", () => {
         document.body.style.backgroundColor = "#000000";
         burpVideo.style.display = "block";
-        if(!burpVideo.ended && burpVideo.currentTime > 800) burpVideo.currentTime = 800;
+        if(!burpVideo.ended && burpVideo.currentTime > 0.8) burpVideo.currentTime = 0.8;
         burpVideo.play();
       });
     </script>
