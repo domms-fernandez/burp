@@ -6,7 +6,6 @@
       * {
         margin: 0;
         padding: 0;
-        position: absolute;
         width: 100%;
         height: 100%;
       }
@@ -16,25 +15,30 @@
       }
 
       button {
-        left: 50%;
-        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
         width: 5%;
         height: 5%;
-        transform: translate(-50%, -50%);
       }
 
       video {
-        left: 50%;
+        margin-left: auto;
+        margin-right: auto;
         width: auto;
-        height: 100%;
-        transform: translateX(-50%);
+        height: 95%;
         display: none;
       }
+
+      div {
+        width: 100%;
+        height: auto;
+      }
+      
     </style>
   </head>
   <body>
-    <button type="button">???</button>
-    <video><source src="/burp/burp.mp4" type="video/mp4">your browser shitty as fuh dawg</video>
+    <div id="vid"><video><source src="/burp/burp.mp4" type="video/mp4">your browser shitty as fuh dawg</video></div>
+    <div id="button"><button type="button">???</button></div>
     <script>
       let burpVideo = document.querySelector("video");
       
