@@ -8,9 +8,6 @@
         padding: 0;
         width: 100%;
         height: 100%;
-      }
-
-      body {
         overflow: hidden;
       }
 
@@ -24,21 +21,26 @@
       video {
         margin-left: auto;
         margin-right: auto;
-        width: auto;
         height: 95%;
+        width: auto;
         display: none;
       }
 
-      div {
+      #butt {
         width: 100%;
-        height: auto;
+        height: 5%;
+      }
+
+      #vid {
+        width: 100%;
+        height: 95%;
       }
       
     </style>
   </head>
   <body>
     <div id="vid"><video><source src="/burp/burp.mp4" type="video/mp4">your browser shitty as fuh dawg</video></div>
-    <div id="button"><button type="button">???</button></div>
+    <div id="butt"><button type="button">???</button></div>
     <script>
       let burpVideo = document.querySelector("video");
       
